@@ -9,7 +9,7 @@ const allChars = upperCase + toLowerCase + number + symbol;
 console.log(allChars);
 
 function createPassword() {
-  let password = "";
+  var password = "";
   password += upperCase[Math.floor(Math.random() * upperCase.length)];
   password += toLowerCase[Math.floor(Math.random() * toLowerCase.length)];
   password += number[Math.floor(Math.random() * number.length)];
@@ -20,6 +20,9 @@ function createPassword() {
   passwordBox.value = password;
 }
 function copyPassword() {
-  passwordBox.select();
-  document.execCommand("copy");
+  if (passwordBox.value.trim() != "") {
+    passwordBox.select();
+    document.execCommand("copy");
+    setTimeout(() => (passwordBox.value = ""), 3000);
+  }
 }
