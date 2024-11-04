@@ -588,9 +588,8 @@ video {
   }
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.fixed {
+  position: fixed;
 }
 
 .mb-6 {
@@ -609,12 +608,16 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .flex {
   display: flex;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-6 {
