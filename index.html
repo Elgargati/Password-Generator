@@ -10,21 +10,21 @@
 </head>
 
 <body>
-    <div class="container h-[100vh] bg-gray-100 text-gray-800 font-sans fixed flex items-center justify-center">
-
-        <div class=" px-4 max-w-lg bg-white shadow-md rounded-lg p-8 w-1/2">
-            <h1 class="font-semibold text-3xl text-gray-900 mb-8">
-                Generate a <br> <span class="text-blue-600 border-b-4 border-blue-600 pb-1">Secure Password</span>
+    <div class="h-screen bg-gray-100  w-full text-gray-800 font-sans fixed flex items-center justify-center">
+        <div class="px-4 bg-white shadow-md rounded-lg p-6   max-w-md sm:w-3/4 md:w-1/2">
+            <h1 class="font-semibold text-2xl md:text-3xl text-gray-900 mb-6 text-center sm:text-left">
+                Generate a <br>
+                <span class="text-blue-600 border-b-4 border-blue-600 pb-1">Secure Password</span>
             </h1>
             <div
-                class="display flex items-center justify-between bg-gray-100 text-gray-600 mb-6 p-4 rounded-md shadow-inner">
+                class="display flex items-center justify-between bg-gray-100 text-gray-600 mb-4 p-3 rounded-md shadow-inner">
                 <input type="text" id="password" placeholder="Your Password"
-                    class="text-lg border-none outline-none bg-transparent w-full">
-                <img src="./images/copy.png" class="w-6 ml-3 cursor-pointer" onclick="copyPassword()">
+                    class="text-base md:text-lg border-none outline-none bg-transparent w-full">
+                <img src="./images/copy.png" class="w-5 md:w-6 ml-2 cursor-pointer" onclick="copyPassword()">
             </div>
             <button onclick="createPassword()"
-                class="bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center w-full py-3 rounded-md text-lg font-medium transition duration-200 ease-in-out">
-                <img src="./images/generate.png" class="w-6 mr-2"> Generate Password
+                class="bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center w-full py-2 md:py-3 rounded-md text-sm md:text-lg font-medium transition duration-200 ease-in-out">
+                <img src="./images/generate.png" class="w-5 md:w-6 mr-2"> Generate Password
             </button>
         </div>
     </div>
